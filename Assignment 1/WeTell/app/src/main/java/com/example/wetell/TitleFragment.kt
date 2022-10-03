@@ -14,8 +14,13 @@ class TitleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentTitleBinding>(inflater,R.layout.fragment_title,container,false)
-        val args = TitleFragmentArgs.fromBundle(requireArguments())
-        binding.name.text = "Name: ${args.login}"
+     //   val args = TitleFragmentArgs.fromBundle(requireArguments())
+      //  binding.apply {
+      //      binding.name.text = "Name: ${args.login}"
+      //      invalidateAll()
+      //  }
+
+
         return binding.root
     }
 
